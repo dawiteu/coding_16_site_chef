@@ -15916,23 +15916,27 @@ header div#headbottomimg {
 }
 
 .triangles:before {
-  width: 120px;
+  width: 100%;
   height: 119px;
-  content: "";
+  content: url("../images/box-right-top.png");
   position: absolute;
   top: 0;
   left: 0;
+  text-align: right;
   background-image: url("../images/box-left-top.png");
+  background-repeat: no-repeat;
 }
 
 .triangles:after {
-  width: 120px;
+  width: 100%;
   height: 119px;
-  content: "";
+  content: url("../images/box-bottom_right.png");
   position: absolute;
-  top: 0;
-  right: 0;
-  background-image: url("../images/box-right-top.png");
+  bottom: 0;
+  left: 0;
+  text-align: right;
+  background-image: url("../images/box-bottom-left.png");
+  background-repeat: no-repeat;
 }
 
 .title-text {
@@ -15943,14 +15947,78 @@ header div#headbottomimg {
   background-repeat: no-repeat;
 }
 
-section#contwhiteone div.triangles p {
+section#contwhiteone div.triangles p.w50 {
   width: 50%;
 }
 
 @media (max-width: 991.98px) {
-  section#contwhiteone div.triangles p {
+  section#contwhiteone div.triangles p.w50 {
     width: 80%;
   }
+}
+
+section#contwhiteone div.list-group {
+  border-radius: 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+section#contwhiteone div.list-group a.list-group-item {
+  color: black;
+  font-size: 30px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-family: "Courgette";
+}
+
+@media (max-width: 991.98px) {
+  section#contwhiteone div.list-group a.list-group-item {
+    padding: 0;
+  }
+}
+
+section#contwhiteone div.list-group a.list-group-item i {
+  font-size: 50px;
+  color: grey;
+}
+
+section#contwhiteone div.list-group a.list-group-item.active {
+  background: none !important;
+  border-right: 4px solid red;
+}
+
+@media (max-width: 991.98px) {
+  section#contwhiteone div.list-group a.list-group-item.active {
+    border: none;
+    border-bottom: 1px solid red;
+  }
+}
+
+section#contwhiteone div.list-group a.list-group-item.active i {
+  color: red;
+}
+
+@media (max-width: 991.98px) {
+  section#contwhiteone div.list-group {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+section#contwhiteone div.tab-pane p {
+  font-size: 12px;
+}
+
+@media (max-width: 1199.98px) {
+  section#contwhiteone div.tab-pane p {
+    font-size: 15px;
+  }
+}
+
+section#contwhiteone div.tab-pane p.price {
+  font-size: default;
+  background-color: #ccc;
+  color: red;
+  font-weight: bold;
 }
 
 body {
