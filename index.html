@@ -9,78 +9,115 @@
 <body>
     
     <header>
+        <!-- nav -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-none container-fluid">
+
+            <!-- btn pour -- qd sm/xs -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
 
+
+            <div class="collapse navbar-collapse mx-auto" id="navbarNavDropdown">
+
+            <div class="container-fluid w-75">
+
+                <div class="row w-100 align-items-center mx-auto">
+
+                    <div class="col-lg-5 col-sm-3 col-xs-3">
+                        <ul class="navbar-nav w-100 d-flex justify-content-xs-end justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-xs-center">
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">about us</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#m">menulist</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#t">team</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-1 col-sm-6 col-xs-6 text-center ">
+                        <a class="navbar-brand mx-auto " href="#">
+                            <img src="public/images/logo.png" alt="Taste - restOoOoo.." class="img-fluid">
+                        </a>
+                    </div>
+  
+                    <div class="col-lg-6 col-sm-3 col-xs-3 ">
+                        <ul class="navbar-nav d-flex justify-content-xs-start justify-content-lg-start justify-content-md-center justify-content-sm-center justify-content-xs-center">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reservation</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">blog</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#m">testimoials</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#t">constact us</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+      </nav>
+    <!-- end nav -->
+            <div id="headertext" class="text-center">
+                <h2 >Whatevere your <span class="font-weight-bold">Occasion</span>,</h2>
+                <h2><span class="text-danger text-uppercase">taste</span> <span class="font-weight-bold">amet </span>consectetur,</h2> 
+                <h2>adipisicing to <span class="font-weight-bold">remember!</span></h2> 
+
+                <button class="btn bg-light py-3 px-4 mx-3 rounded-pill w-lg-25 my-2">Purchast time</button>
+                <button class="btn btn-danger py-3 px-4 mx-3 rounded-pill w-lg-25 my-2">learn more</button>
+            </div>
         <!-- Carousell  -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <!-- nav -->
-            <nav class="w-100 navbar navbar-expand-lg navbar-dark bg-none text-white text-center container-fluid">
-                <!-- btn pour -- qd sm/xs -->
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-
-
-                <div class="collapse navbar-collapse mx-auto" id="navbarNavDropdown">
-                    <ul class="navbar-nav align-items-center mx-auto">
-
-                        <li class="nav-item active py-1 w-xs-100">
-                            <a class="px-xl-5 px-lg-2 px-md-0 nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-
-                        <li class="nav-item py-1">
-                            <a class="px-xl-4 px-lg-1 px-md-0 nav-link" href="#">about us</a>
-                        </li>
-
-                        <li class="nav-item py-1">
-                            <a class="px-xl-5 px-lg-2 px-md-0 nav-link" href="#m">menulist</a>
-                        </li>
-
-                        <li class="nav-item py-1">
-                            <a class="px-xl-5 px-lg-2 px-md-0 nav-link" href="#t">team</a>
-                        </li>
-
-                        <a class="navbar-brand px-5 px-lg-3 mx-auto" href="#">
-                            <img src="public/images/logo.png" alt="" class="img-fluid">
-                        </a>
-
-                        <li class="nav-item py-1">
-                            <a class="px-xl-5 px-lg-2 px-md-0 nav-link" href="#">reservation</a>
-                        </li>
-
-                        <li class="nav-item py-1">
-                            <a class="px-xl-5 px-lg-2 px-md-0 nav-link" href="#">blog</a>
-                        </li>
-
-                        <li class="nav-item py-1">
-                            <a class="px-xl-5 px-lg-2 px-md-0 nav-link" href="#">testimonials</a>
-                        </li>
-
-                        <li class="nav-item py-1">
-                            <a class="px-xl-4 px-lg-1 px-md-0 nav-link" href="#">contact us</a>
-                        </li>
-                  
-              </ul>
-            </div>
-          </nav>
-        <!-- end nav -->
-
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
+
               <div class="carousel-item active">
                 <img src="./public/images/banner1.jpg" class="d-block w-100" alt="Banner 1 ing">
               </div>
+
               <div class="carousel-item">
                 <img src="./public/images/banner1.jpg" class="d-block w-100" alt="Banner 1 ing">
               </div>
+
               <div class="carousel-item">
                 <img src="./public/images/banner1.jpg" class="d-block w-100" alt="Banner 1 ing">
               </div>
+
+              
             </div>
+
+            
              <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>

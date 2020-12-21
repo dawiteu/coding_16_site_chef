@@ -1,10 +1,13 @@
 header{
     width:100%;   
+    height:auto;
+    min-height:100vh;
     position:relative;
 
     div#carouselExampleIndicators{
         z-index:1!important;
         background-color: black; 
+        position:relative;
 
         div.carousel-item img{
             opacity:0.5;
@@ -19,7 +22,7 @@ header{
                 cursor: pointer;
                 border: none;
                 border-radius: 50%;
-                background-color: #ccc;  
+                background-color: #ccc;   
             }
             .active{
                     width: 12px;
@@ -28,28 +31,61 @@ header{
                     background-color: #2d2d2d;
                     border:2px solid white;
             }
-        }
+        } // fin div . carousel-indicator
 
-        nav{
-            z-index:2000!important;
-            position:absolute!important;
+        
+    } // fin div #carouselExampleIndicator
+    nav #navbarNavDropdown{
+        background: none;
+        @media (max-width: 991.98px) { background-color: black  }
+    }
+    .navbar{                   
+        z-index:2000!important;
+        position:absolute!important;
 
-            li.nav-item{
-                border-top:1px solid white;
-                border-bottom:1px solid white;
-
-                .nav-link{
-                    text-transform: uppercase;
-                }
-
-                &:hover{
-                    background-color: red;
-                }
+        li.nav-item{
+            border-top:1px solid white;
+            border-bottom:1px solid white;
+            width:100%;
+            text-align:center;
+            .nav-link{
+                text-transform: uppercase;
             }
-            li.active{
+
+            &:hover{
                 background-color: red;
             }
-        }   
+        }
+        li.active{
+            background-color: red;
+        }
+    } // fin . navbar ;   
 
-    }
-}
+    div#headertext{
+        width:65%;
+        position:absolute;
+        z-index:1500;
+        top:10%;
+        @include media-breakpoint-up(lg) { top:20%; };
+        left:50%; 
+        transform: translateX(-50%);
+        color:white;
+        h2{ 
+            font-family:"Courgette";
+            font-size:20px; 
+            @include media-breakpoint-up(sm) { font-size: calc(1.5rem + 3vw); };
+        } 
+        button{
+            text-transform:uppercase;
+        }
+        
+    } // fin # headertext; 
+} // fin header
+
+
+
+@include media-breakpoint-up(sm) { };
+@include media-breakpoint-up(md) {  };
+@include media-breakpoint-up(lg) {  };
+@include media-breakpoint-up(xl) {  };
+@include media-breakpoint-up(xxl) { };

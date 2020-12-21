@@ -16036,11 +16036,14 @@ h3 {
 }
 header {
   width: 100%;
+  height: auto;
+  min-height: 100vh;
   position: relative;
 }
 header div#carouselExampleIndicators {
   z-index: 1 !important;
   background-color: black;
+  position: relative;
 }
 header div#carouselExampleIndicators div.carousel-item img {
   opacity: 0.5;
@@ -16062,22 +16065,62 @@ header div#carouselExampleIndicators .carousel-indicators .active {
   background-color: #2d2d2d;
   border: 2px solid white;
 }
-header div#carouselExampleIndicators nav {
+header nav #navbarNavDropdown {
+  background: none;
+}
+@media (max-width: 991.98px) {
+  header nav #navbarNavDropdown {
+    background-color: black;
+  }
+}
+header .navbar {
   z-index: 2000 !important;
   position: absolute !important;
 }
-header div#carouselExampleIndicators nav li.nav-item {
+header .navbar li.nav-item {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
+  width: 100%;
+  text-align: center;
 }
-header div#carouselExampleIndicators nav li.nav-item .nav-link {
+header .navbar li.nav-item .nav-link {
   text-transform: uppercase;
 }
-header div#carouselExampleIndicators nav li.nav-item:hover {
+header .navbar li.nav-item:hover {
   background-color: red;
 }
-header div#carouselExampleIndicators nav li.active {
+header .navbar li.active {
   background-color: red;
+}
+header div#headertext {
+  width: 65%;
+  position: absolute;
+  z-index: 1500;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+@media (min-width: 992px) {
+  header div#headertext {
+    top: 20%;
+  }
+}
+header div#headertext h2 {
+  font-family: "Courgette";
+  font-size: 20px;
+}
+@media (min-width: 576px) {
+  header div#headertext h2 {
+    font-size: calc(1.5rem + 3vw);
+  }
+}
+header div#headertext button {
+  text-transform: uppercase;
+}
+
+body {
+  color: red;
 }
 
 /*# sourceMappingURL=app.css.map */
