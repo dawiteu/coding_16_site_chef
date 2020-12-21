@@ -1,0 +1,42 @@
+
+.font-cour{
+    font-family:"Courgette";
+}
+.triangles{
+    position:relative;
+    &:before{
+        width:120px;
+        height:119px;
+        content: ""; 
+        position:absolute; 
+        top:0;
+        left:0;
+        background-image: url("../images/box-left-top.png");
+    }
+    &:after{
+        width:120px;
+        height:119px;
+        content: ""; 
+        position:absolute; 
+        top:0;
+        right:0;
+        background-image: url("../images/box-right-top.png"); 
+    }
+}
+
+.title-text{
+    width:50%; 
+    height:60px;
+    background-image: url("../images/decoration_line.png");
+    background-position:center bottom;
+    background-repeat:no-repeat;
+}
+
+section#contwhiteone{
+    div.triangles{
+        p{
+            width:50%; 
+            @include media-breakpoint-down(md) { width:80%; }
+        }
+    }
+}

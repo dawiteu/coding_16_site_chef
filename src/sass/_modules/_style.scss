@@ -1,6 +1,7 @@
-@import "header.scss";
-
+@import "header";
+@import "sections";
 
 body{
-    color:red; 
+    background-image:url("../images/main_bg.jpg");
+    background-repeat: repeat; 
 }
