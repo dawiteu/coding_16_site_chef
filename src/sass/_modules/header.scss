@@ -1,0 +1,31 @@
+header{
+    width:100%;   
+    // min-height:60vh; 
+    background-color: black;    
+
+    img{
+        opacity:0.5;
+    }
+
+    .carousel-indicators li {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        background-color: #ccc;  
+    }
+    .carousel-indicators .active {
+        width: 12px;
+        height: 12px;
+        margin: 10px;
+        background-color: #2d2d2d;
+        border:2px solid white;
+    }
+    // div#carouselExampleIndicators::before{
+    //     content: "Text";
+    //     z-index:2;
+    // }
+}
