@@ -4,27 +4,53 @@
 }
 .triangles{
     position:relative;
-    &:before{
-        width:100%; 
-        height:119px;
-        content: url("../images/box-right-top.png");
-        position:absolute; 
-        top:0;
-        left:0;
-        text-align:right;
-        background-image: url("../images/box-left-top.png");
-        background-repeat: no-repeat;
+    &.rouge{
+        &:before{
+            width:100%; 
+            height:119px;
+            content: url("../images/box-right-top.png");
+            position:absolute; 
+            top:0;
+            left:0;
+            text-align:right;
+            background-image: url("../images/box-left-top.png");
+            background-repeat: no-repeat;
+        }
+        &:after{
+            width:100%;
+            height:119px;
+            content: url("../images/box-bottom_right.png"); 
+            position:absolute; 
+            bottom:0;
+            left:0;
+            text-align:right;
+            background-image: url("../images/box-bottom-left.png"); 
+            background-repeat: no-repeat;
+        }
     }
-    &:after{
-        width:100%;
-        height:119px;
-        content: url("../images/box-bottom_right.png"); 
-        position:absolute; 
-        bottom:0;
-        left:0;
-        text-align:right;
-        background-image: url("../images/box-bottom-left.png"); 
-        background-repeat: no-repeat;
+    &.noir{
+        &:before{
+            width:100%; 
+            height:119px;
+            content: url("../images/box-right-top-grey.png");
+            position:absolute; 
+            top:0;
+            left:0;
+            text-align:right;
+            background-image: url("../images/box-left-top-grey.png");
+            background-repeat: no-repeat;
+        }
+        &:after{
+            width:100%;
+            height:119px;
+            content: url("../images/box-bottom_right-grey.png"); 
+            position:absolute; 
+            bottom:0;
+            left:0;
+            text-align:right;
+            background-image: url("../images/box-bottom-left-grey.png"); 
+            background-repeat: no-repeat;
+        }       
     }
 }
 
@@ -146,6 +172,22 @@ section#meetchefs{
     background-position:fixed;
     overflow-y:scroll;
 }
+
 section#meetchefs::-webkit-scrollbar{
     display:none;
-}
+} // end section meet chefs 
+
+section#bytandblog{
+    height:100vh;
+    div#divformbook{
+        width:70%;
+        min-height:50vh; 
+        background-image: url("../images/book_table_bg.jpg");
+        @include media-breakpoint-down(md){
+            background-size: auto 100%;
+        }
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius:25px; 
+    }
+} // end section Book your table and blog 
