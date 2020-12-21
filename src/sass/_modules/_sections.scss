@@ -96,4 +96,35 @@ section#contwhiteone{
             font-weight:bold;
         }
     }
+
+    div.alert{
+        position:relative;
+
+        &:before{
+            content:"!";
+            width:0;
+            height:0;
+            top:0;
+            left:50%;
+            transform: translateX(-50%);
+            z-index:0;
+            position:absolute;
+            border-left:70px solid transparent;
+            border-right:70px solid transparent;
+            border-bottom:70px solid yellow;
+            font-size:3em; 
+            font-weight:bold;
+            text-align: left;
+            opacity:0.3;
+            
+        }
+        h2{
+            color:black;
+            z-index:2;
+            text-align: center;
+        }
+
+    }
 }
+// end section contwhiteone (menu); 
+
