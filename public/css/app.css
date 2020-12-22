@@ -15961,12 +15961,15 @@ header div#headbottomimg {
   text-align: right;
   background-image: url("../images/box-bottom-left-grey.png");
   background-repeat: no-repeat;
+  margin-top: 20px;
+  background-color: blue;
 }
 
 .title-text {
   min-width: 50%;
   height: 60px;
   position: relative;
+  z-index: 4;
 }
 
 .title-text::after {
@@ -15980,6 +15983,7 @@ header div#headbottomimg {
   background-image: url("../images/decoration_line.png");
   background-position: center bottom;
   background-repeat: no-repeat;
+  z-index: -1000;
 }
 
 section#contwhiteone div.triangles p.w50 {
@@ -16056,6 +16060,10 @@ section#contwhiteone div.tab-pane p.price {
   font-weight: bold;
 }
 
+section#contwhiteone div.tab-pane img {
+  border: 5px solid #ccc;
+}
+
 section#contwhiteone div.alert {
   position: relative;
 }
@@ -16118,8 +16126,33 @@ section#bytandblog div#divformbook {
   }
 }
 
+section#bytandblog div#blog div.card {
+  border: none !important;
+}
+
+section#bytandblog div#blog div.card img {
+  border: 5px solid #ccc;
+  border-radius: 25px;
+}
+
+section#bytandblog div#blog div.card div.card-body {
+  position: relative;
+}
+
+section#bytandblog div#blog div.card div.card-body h3 {
+  width: 80%;
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 body {
   background-image: url("../images/main_bg.jpg");
   background-repeat: repeat;
   font-family: "Ubuntu";
+}
+
+.zindex2000 {
+  z-index: 1000000000000000000000 !important;
 }
