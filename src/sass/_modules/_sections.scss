@@ -52,8 +52,6 @@
             text-align:right;
             background-image: url("../images/box-bottom-left-grey.png"); 
             background-repeat: no-repeat;
-            margin-top:20px;
-            background-color: blue;
         }       
     }
 }
@@ -143,8 +141,6 @@ section#contwhiteone{
     }
 
     div.alert{
-        position:relative;
-
         &:before{
             content:"!";
             width:0;
@@ -187,7 +183,7 @@ section#meetchefs::-webkit-scrollbar{
 } // end section meet chefs 
 
 section#bytandblog{
-    height:100vh;
+    
     div#divformbook{
         width:70%;
         min-height:50vh; 
@@ -203,6 +199,7 @@ section#bytandblog{
     div#blog{
         div.card{
             border:none!important;
+            background:none!important; 
             img{
                 border:5px solid #ccc;
                 border-radius:25px;
@@ -221,3 +218,8 @@ section#bytandblog{
         }
     }
 } // end section Book your table and blog 
+section#ctestim{
+    width:100%; 
+    min-height:40vh; 
+    background-image: url("../images/testimonials_background.jpg");
+}

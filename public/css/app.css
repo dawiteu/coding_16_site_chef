@@ -15871,7 +15871,7 @@ header div#headertext {
   width: 65%;
   position: absolute;
   z-index: 1500;
-  top: 10%;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
   color: white;
@@ -15889,6 +15889,12 @@ header div#headertext h2 {
 }
 
 @media (min-width: 576px) {
+  header div#headertext h2 {
+    font-size: calc(1.5rem + 2vw);
+  }
+}
+
+@media (min-width: 768px) {
   header div#headertext h2 {
     font-size: calc(1.5rem + 3vw);
   }
@@ -15961,8 +15967,6 @@ header div#headbottomimg {
   text-align: right;
   background-image: url("../images/box-bottom-left-grey.png");
   background-repeat: no-repeat;
-  margin-top: 20px;
-  background-color: blue;
 }
 
 .title-text {
@@ -16064,10 +16068,6 @@ section#contwhiteone div.tab-pane img {
   border: 5px solid #ccc;
 }
 
-section#contwhiteone div.alert {
-  position: relative;
-}
-
 section#contwhiteone div.alert:before {
   content: "!";
   width: 0;
@@ -16107,10 +16107,6 @@ section#meetchefs::-webkit-scrollbar {
   display: none;
 }
 
-section#bytandblog {
-  height: 100vh;
-}
-
 section#bytandblog div#divformbook {
   width: 70%;
   min-height: 50vh;
@@ -16128,6 +16124,7 @@ section#bytandblog div#divformbook {
 
 section#bytandblog div#blog div.card {
   border: none !important;
+  background: none !important;
 }
 
 section#bytandblog div#blog div.card img {
@@ -16147,6 +16144,12 @@ section#bytandblog div#blog div.card div.card-body h3 {
   transform: translateX(-50%);
 }
 
+section#ctestim {
+  width: 100%;
+  min-height: 40vh;
+  background-image: url("../images/testimonials_background.jpg");
+}
+
 body {
   background-image: url("../images/main_bg.jpg");
   background-repeat: repeat;
@@ -16154,5 +16157,9 @@ body {
 }
 
 .zindex2000 {
-  z-index: 1000000000000000000000 !important;
+  z-index: 2000 !important;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 3%;
 }

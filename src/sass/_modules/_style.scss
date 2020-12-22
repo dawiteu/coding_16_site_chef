@@ -8,5 +8,9 @@ body{
 }
 
 .zindex2000{
-    z-index:999999999999999999999!important;
+    z-index:2000!important;
+    left:50%; 
+    transform: translateX(-50%);
+    position:absolute;
+    bottom:3%;
 }

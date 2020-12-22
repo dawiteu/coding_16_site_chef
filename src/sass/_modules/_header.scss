@@ -65,7 +65,7 @@ header{
         width:65%;
         position:absolute;
         z-index:1500;
-        top:10%;
+        top:5%;
         @include media-breakpoint-up(lg) { top:20%; };
         left:50%; 
         transform: translateX(-50%);
@@ -73,7 +73,8 @@ header{
         h2{ 
             font-family:"Courgette";
             font-size:20px; 
-            @include media-breakpoint-up(sm) { font-size: calc(1.5rem + 3vw); };
+            @include media-breakpoint-up(sm) { font-size: calc(1.5rem + 2vw); };
+            @include media-breakpoint-up(md) { font-size: calc(1.5rem + 3vw); };
         } 
         button{
             text-transform:uppercase;
