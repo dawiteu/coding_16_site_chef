@@ -6,7 +6,7 @@ header{
 
     div#carouselExampleIndicators{
         z-index:1!important;
-        background-color: black; 
+        background-color: black;  // fond en noir 
         position:relative;
 
         div.carousel-item img{
@@ -19,6 +19,7 @@ header{
                 width: 12px;
                 height: 12px;
                 margin: 10px;
+                padding:3px;
                 cursor: pointer;
                 border: none;
                 border-radius: 50%;
@@ -30,6 +31,24 @@ header{
                     margin: 10px;
                     background-color: #2d2d2d;
                     border:2px solid white;
+                    position:relative;
+
+                    &::before{
+                        content:'';
+                        width:10px;
+                        height:10px;
+                        top:20%; 
+                        @include media-breakpoint-up(xl){ 
+                            top:25%; 
+                        } 
+                        left:50%;
+                        transform: translateY(-50%);
+                        transform: translateX(-50%);
+
+                        background-color: white;
+                        border-radius:50%;
+                        position:absolute;
+                    }
             }
         } // fin div . carousel-indicator
 
@@ -41,7 +60,9 @@ header{
     }
     .navbar{                   
         z-index:2000!important;
-        position:absolute!important;
+        position:fixed!important;
+
+        background-color: rgba(51,51,51,0.3);
 
         li.nav-item{
             border-top:1px solid white;
@@ -50,6 +71,11 @@ header{
             text-align:center;
             .nav-link{
                 text-transform: uppercase;
+                // color:blue;
+                &.active{
+                    // color:yellow;
+                    background-color:red;
+                }
             }
 
             &:hover{
@@ -82,21 +108,26 @@ header{
         
     } // fin # headertext; 
 
-    div#headbottomimg{
+    &::after{
+        content:'';
         width:100%;
-        height:10px;
+        height:15px;
         background-image: url("../images/bottom_decoration_img.png"); 
-        background-repeat: repeat;
-        background-color:black;
+        background-repeat: repeat-x;
+        background-color: black;
         opacity:0.8;
-
+        position:absolute;
+        bottom:-10px;
+        left:0;
     }
 } // fin header
 
 
-
+/*
 @include media-breakpoint-up(sm) { };
 @include media-breakpoint-up(md) {  };
 @include media-breakpoint-up(lg) {  };
 @include media-breakpoint-up(xl) {  };
 @include media-breakpoint-up(xxl) { };
+
+*/

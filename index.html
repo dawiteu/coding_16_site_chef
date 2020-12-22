@@ -6,9 +6,9 @@
     <title>C.S. 16 // Site du Chef </title>
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbarNavDropdown" data-offset="250">
     
-    <header>
+    <header id="home">
         <!-- nav -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-none container-fluid">
 
@@ -16,8 +16,6 @@
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-
-
 
             <div class="collapse navbar-collapse mx-auto" id="navbarNavDropdown">
 
@@ -28,20 +26,20 @@
                     <div class="col-lg-5 col-sm-3 col-xs-3">
                         <ul class="navbar-nav w-100 d-flex justify-content-xs-end justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-xs-center">
 
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <li class="nav-item"> <!-- active -->
+                                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">about us</a>
+                                <a class="nav-link" href="#ourstory">about us</a>
                             </li>
 
                             <li class="nav-item ">
-                                <a class="nav-link" href="#m">menulist</a>
+                                <a class="nav-link" href="#menulist">menulist</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#t">team</a>
+                                <a class="nav-link" href="#team">team</a>
                             </li>
 
                         </ul>
@@ -57,19 +55,19 @@
                         <ul class="navbar-nav d-flex justify-content-xs-start justify-content-lg-start justify-content-md-center justify-content-sm-center justify-content-xs-center">
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Reservation</a>
+                                <a class="nav-link" href="#book">Reservation</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">blog</a>
+                                <a class="nav-link" href="#blog">blog</a>
                             </li>
 
                             <li class="nav-item ">
-                                <a class="nav-link" href="#m">testimoials</a>
+                                <a class="nav-link" href="#ctestim">testimoials</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#t">constact us</a>
+                                <a class="nav-link" href="#contact">contact us</a>
                             </li>
 
                         </ul>
@@ -86,7 +84,7 @@
       </nav>
     <!-- end nav -->
             <div id="headertext" class="text-center">
-                <h2 >Whatevere your <span class="font-weight-bold">Occasion</span>,</h2>
+                <h2 >Whatevere your <span class="font-weight-bold text-uppercase">Occasion</span>,</h2>
                 <h2><span class="text-danger text-uppercase">taste</span> <span class="font-weight-bold">amet </span>consectetur,</h2> 
                 <h2>adipisicing to <span class="font-weight-bold">remember!</span></h2> 
 
@@ -131,13 +129,13 @@
           <div id="headbottomimg"></div>
     </header>
     <section id="contwhiteone" class="mt-5 container ">
-        <div class="triangles rouge w-100 border bg-light text-center ">
+        <div class="triangles rouge w-100 border bg-light text-center" id="ourstory">
 
             <h2 class="title-text font-cour h2 text-capitalize text-black mx-auto my-3"><span class="text-uppercase h1 text-danger">Our</span> Story</h2>
             
             <p class="mx-auto my-5 w50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit reprehenderit vero temporibus maiores quia ut placeat illo et necessitatibus dolor harum, repudiandae velit nisi aut ab, voluptates vitae culpa? Debitis, excepturi. Animi eveniet maxime rerum officiis eligendi aperiam vel inventore minima quae assumenda maiores, repudiandae doloremque. Omnis ex consequatur et!</p>
 
-            <h2 class="title-text font-cour h2 text-black text-capitalize mx-auto my-3 "><span class="text-uppercase h1 text-danger">Our</span> Menu list</h2>
+            <h2 class="title-text font-cour h2 text-black text-capitalize mx-auto my-3 " id="menulist"><span class="text-uppercase h1 text-danger">Our</span> Menu list</h2>
             
             <div class="row pb-5 mb-5">
                 <div class="col-lg-3 col-md-12">
@@ -548,7 +546,7 @@
     
     <!-- section meet chefs  -->
     <section id="meetchefs" class="container-fluid">
-        <h2 class="title-text text-center font-cour h2 text-black mx-auto text-capitalize py-3 my-3"><span class="text-uppercase h1 text-danger">meet</span> our chef</h2>
+        <h2 id="team" class="title-text text-center font-cour h2 text-black mx-auto text-capitalize py-3 my-3"><span class="text-uppercase h1 text-danger">meet</span> our chef</h2>
 
         <div class="row mx-0 my-3 px-0 py-5 text-center">
             <div class="col-lg-3 col-md-6 px-2 ">
@@ -575,7 +573,7 @@
     <section id="bytandblog" class="mt-5 mb-5 container">
         <div class="triangles noir w-100 border bg-light text-center pb-5 ">
 
-            <h2 class="title-text font-cour h2 text-capitalize text-black mx-auto my-5"><span class="text-uppercase h1 text-danger">book</span> your Table</h2>
+            <h2 id="book" class="title-text font-cour h2 text-capitalize text-black mx-auto my-5"><span class="text-uppercase h1 text-danger">book</span> your Table</h2>
             
             <div id="divformbook" class="container text-white ">
 
@@ -766,7 +764,7 @@
 
     <!-- footer -->
 
-    <footer class="container-fluid">
+    <footer class="container-fluid m-0 p-0">
         <div class="row mx-auto container">
             <div class="order-1 col-sm-12 col-lg-4">
                 <h3 class="text-white text-uppercase mt-5 ml-3">about us</h3>

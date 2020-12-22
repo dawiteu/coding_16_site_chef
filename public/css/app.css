@@ -15819,6 +15819,7 @@ header div#carouselExampleIndicators .carousel-indicators li {
   width: 12px;
   height: 12px;
   margin: 10px;
+  padding: 3px;
   cursor: pointer;
   border: none;
   border-radius: 50%;
@@ -15831,6 +15832,26 @@ header div#carouselExampleIndicators .carousel-indicators .active {
   margin: 10px;
   background-color: #2d2d2d;
   border: 2px solid white;
+  position: relative;
+}
+
+header div#carouselExampleIndicators .carousel-indicators .active::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 20%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+}
+
+@media (min-width: 1200px) {
+  header div#carouselExampleIndicators .carousel-indicators .active::before {
+    top: 25%;
+  }
 }
 
 header nav #navbarNavDropdown {
@@ -15845,7 +15866,8 @@ header nav #navbarNavDropdown {
 
 header .navbar {
   z-index: 2000 !important;
-  position: absolute !important;
+  position: fixed !important;
+  background-color: rgba(51, 51, 51, 0.3);
 }
 
 header .navbar li.nav-item {
@@ -15857,6 +15879,10 @@ header .navbar li.nav-item {
 
 header .navbar li.nav-item .nav-link {
   text-transform: uppercase;
+}
+
+header .navbar li.nav-item .nav-link.active {
+  background-color: red;
 }
 
 header .navbar li.nav-item:hover {
@@ -15904,15 +15930,27 @@ header div#headertext button {
   text-transform: uppercase;
 }
 
-header div#headbottomimg {
+header::after {
+  content: '';
   width: 100%;
-  height: 10px;
+  height: 15px;
   background-image: url("../images/bottom_decoration_img.png");
-  background-repeat: repeat;
+  background-repeat: repeat-x;
   background-color: black;
   opacity: 0.8;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
 }
 
+/*
+@include media-breakpoint-up(sm) { };
+@include media-breakpoint-up(md) {  };
+@include media-breakpoint-up(lg) {  };
+@include media-breakpoint-up(xl) {  };
+@include media-breakpoint-up(xxl) { };
+
+*/
 .font-cour {
   font-family: "Courgette";
 }
@@ -16201,16 +16239,16 @@ section#contact div#contactbox .row [class*='col-'] i {
 
 footer {
   width: 100%;
-  min-height: 50vh;
+  min-height: 40vh;
   background-image: url("../images/footer_background.jpg");
-  background-repeat: no-repeat;
+  background-color: yellow;
+  background-position: center;
   position: relative;
 }
 
 @media (max-width: 991.98px) {
   footer {
     background-size: auto 100%;
-    height: calc(auto + 10vh);
   }
 }
 
@@ -16244,9 +16282,10 @@ footer::before {
 footer::after {
   content: '';
   width: 100%;
-  height: 5vh;
+  height: 7vh;
   background-color: #dc3545;
-  position: absolute;
+  position: relative;
+  display: block;
   bottom: 0;
   left: 0;
 }
@@ -16255,6 +16294,7 @@ body {
   background-image: url("../images/main_bg.jpg");
   background-repeat: repeat;
   font-family: "Ubuntu";
+  position: relative;
 }
 
 .zindex2000 {
@@ -16263,4 +16303,8 @@ body {
   transform: translateX(-50%);
   position: absolute;
   bottom: 3%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
