@@ -16106,6 +16106,19 @@ section#contwhiteone div.tab-pane img {
   border: 5px solid #ccc;
 }
 
+section#contwhiteone div.tab-pane .row .col-lg-6 .row {
+  border-bottom: 1px dashed #ccc;
+}
+
+@media (min-width: 992px) {
+  section#contwhiteone div.tab-pane .row.pt-3 {
+    border-left: 1px solid #ccc;
+  }
+  section#contwhiteone div.tab-pane .row.pt-3:last-child {
+    border-bottom-left-radius: 5px;
+  }
+}
+
 section#contwhiteone div.alert:before {
   content: "!";
   width: 0;

@@ -97,13 +97,11 @@ section#contwhiteone{
             @include media-breakpoint-down(md){
                 padding:0;
             }
-
             i{
                 font-size:50px;
                 color:grey;
             }
             &.active{
-                // color:red;
                 background:none!important;
                 border-right:4px solid red;
                 @include media-breakpoint-down(md){
@@ -137,6 +135,23 @@ section#contwhiteone{
         }
         img{
             border:5px solid #ccc; 
+        }
+        .row{
+            .col-lg-6{
+                .row{
+                    border-bottom:1px dashed #ccc;
+                }
+            }
+            &.pt-3{
+                @include media-breakpoint-up(lg){ 
+                    border-left:1px solid #ccc; 
+
+                    &:last-child{
+                        border-bottom-left-radius:5px; 
+                    }
+                }
+
+            }
         }
     }
 
