@@ -230,4 +230,39 @@ section#ctestim{
     img{
         border:4px solid #ccc;
     }
+} // fin sectionclients testimontinals ; 
+
+
+
+section#contact{
+
+    div#contactbox{
+        width:80%;
+        border-radius:30px;
+        @include media-breakpoint-up(md){ width: calc( 100% / 3); }
+        @include media-breakpoint-only(md) { width: 80%;  }
+
+        .row{
+            margin-top:3%;
+            position:relative;
+            &:not(:last-child){
+                &:after{
+                    content:'';
+                    width:80%; 
+                    height:1px; 
+                    left:50%; 
+                    transform: translateX(-50%);
+                    bottom:0; 
+                    position:absolute;
+                    border-bottom:1px solid white;
+                }
+            }
+            [class*='col-']{ 
+                i{
+                    font-size:40px;
+                }
+            }
+            
+        }
+    }
 }

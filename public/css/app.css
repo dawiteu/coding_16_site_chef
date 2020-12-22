@@ -16162,6 +16162,43 @@ section#ctestim img {
   border: 4px solid #ccc;
 }
 
+section#contact div#contactbox {
+  width: 80%;
+  border-radius: 30px;
+}
+
+@media (min-width: 768px) {
+  section#contact div#contactbox {
+    width: calc( 100% / 3);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section#contact div#contactbox {
+    width: 80%;
+  }
+}
+
+section#contact div#contactbox .row {
+  margin-top: 3%;
+  position: relative;
+}
+
+section#contact div#contactbox .row:not(:last-child):after {
+  content: '';
+  width: 80%;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  position: absolute;
+  border-bottom: 1px solid white;
+}
+
+section#contact div#contactbox .row [class*='col-'] i {
+  font-size: 40px;
+}
+
 body {
   background-image: url("../images/main_bg.jpg");
   background-repeat: repeat;
