@@ -16199,6 +16199,30 @@ section#contact div#contactbox .row [class*='col-'] i {
   font-size: 40px;
 }
 
+footer {
+  width: 100%;
+  min-height: 30vh;
+  background-image: url("../images/footer_background.jpg");
+  position: relative;
+}
+
+footer ul#footermedialist li a i {
+  font-size: 30px;
+  color: white;
+}
+
+footer::before {
+  content: '';
+  width: 100%;
+  height: 30px;
+  display: block;
+  background-image: url("../images/footer_bottom_decoration_img.png");
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 body {
   background-image: url("../images/main_bg.jpg");
   background-repeat: repeat;
