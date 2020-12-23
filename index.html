@@ -6,7 +6,7 @@
     <title>C.S. 16 // Site du Chef </title>
     <link rel="stylesheet" href="./public/css/app.css">
     <!-- bootstrap-->
-    
+
    <!-- 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
     
@@ -19,15 +19,17 @@
     <header id="home">
         <!-- nav -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-none container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./public/images/logo.png" alt="Logo" class="img-fluid d-xl-none d-lg-none">
-              </a>
-            <!-- btn pour -- qd sm/xs -->
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse mx-auto" id="navbarNavDropdown">
+        <a class="navbar-brand" href="#">
+            <img src="./public/images/logo.png" alt="Logo" class="img-fluid d-xl-none d-lg-none">
+        </a>
+
+            <!-- btn pour -- qd sm/xs -->
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse mx-auto" id="navbarNavDropdown">
 
             <div class="container-fluid w-100">
 
@@ -89,7 +91,6 @@
 
 
         </div>
-
 
       </nav>
     <!-- end nav -->
@@ -558,7 +559,7 @@
     <section id="meetchefs" class="container-fluid">
         <h2 id="team" class="title-text text-center font-cour h2 text-black mx-auto text-capitalize py-3 my-3"><span class="text-uppercase h1 text-danger">meet</span> our chef</h2>
 
-        <div class="row mx-0 my-3 px-0 py-5 text-center">
+        <div class="row mx-0 my-3 px-0 py-5 text-center chefs">
             <div class="col-lg-3 col-md-6 px-2 ">
                 <img src="./public/images/chef1.png" alt="Chef n1" class="border-bottom" />
                 <h5 class="h6 font-weight-normal">Lorem, ipsum.</h5>
@@ -774,7 +775,7 @@
 
     <!-- footer -->
 
-    <footer class="container-fluid m-0 p-0">
+    <footer class="container-fluid m-0 p-0 d-flex flex-column">
         <div class="row mx-auto container">
             <div class="order-1 col-sm-12 col-lg-4">
                 <h3 class="text-white text-uppercase mt-5 ml-3">about us</h3>
@@ -825,6 +826,9 @@
             </div>
         </div>
         
+        <div id="bottombottom" class="contrainer-fluid bg-danger text-white d-flex justify-content-center align-items-center">
+            <a href="#home"><i class="fas fa-arrow-circle-up"></i></a>
+        </div>
     </footer>
 
     <!-- footer  -->

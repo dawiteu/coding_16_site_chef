@@ -16152,6 +16152,25 @@ section#meetchefs {
   margin-top: 6%;
   background-position: fixed;
   overflow-y: scroll;
+  /*
+    .chefs{
+        transform:rotateX(90deg);
+        transition:1s;
+    }
+    :hover{
+        .chefs{
+            transform:rotateX(120deg);
+        }
+    } 
+    */
+}
+
+section#meetchefs :hover {
+  cursor: pointer;
+}
+
+section#meetchefs :hover .chefs:nth-child(2) {
+  transform: scaleY(1);
 }
 
 section#meetchefs::-webkit-scrollbar {
@@ -16257,6 +16276,18 @@ footer {
   background-color: yellow;
   background-position: center;
   position: relative;
+  /*
+    &::after{
+        content:' ^ ';
+        width:100%;
+        height:8vh;
+        text-align:center;
+        background-color: $danger;
+        position:relative;
+        display:block;
+        left:0; 
+        bottom:0; 
+    }*/
 }
 
 @media (max-width: 991.98px) {
@@ -16292,15 +16323,11 @@ footer::before {
   left: 0;
 }
 
-footer::after {
-  content: '';
+footer div#bottombottom {
   width: 100%;
-  height: 7vh;
-  background-color: #dc3545;
-  position: relative;
-  display: block;
-  bottom: 0;
-  left: 0;
+  height: 10vh;
+  margin-bottom: 0px;
+  font-size: 30px;
 }
 
 body {
@@ -16319,5 +16346,5 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
