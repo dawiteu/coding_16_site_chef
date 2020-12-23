@@ -92,8 +92,9 @@ section#contwhiteone{
             color:black;
             font-size:30px;
             border:none;
-            border-bottom:1px solid #ccc;
+            border-bottom:2px solid #ccc;
             font-family:"Courgette";
+            
             @include media-breakpoint-down(md){
                 padding:0;
             }
