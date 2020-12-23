@@ -2,7 +2,6 @@ footer{
     width:100%; 
     min-height:40vh;
     background-image: url("../images/footer_background.jpg");
-    background-color:yellow;
     background-position:center;
     @include media-breakpoint-down(md){
         background-size: auto 100%;
