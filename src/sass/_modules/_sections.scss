@@ -193,21 +193,18 @@ section#meetchefs{
     background-position:fixed;
     overflow-y:scroll;
 
-    /*
+    
     .chefs{
-        transform:rotateX(90deg);
-        transition:1s;
+        opacity:0; 
+        transition:1s; 
     }
+
     :hover{
-        .chefs{
-            transform:rotateX(120deg);
-        }
-    } 
-    */
-    :hover{
-        cursor:pointer;
-        .chefs:nth-child(2){
-            transform: scaleY(1);
+        &.chefs{
+            opacity:1;
+            img{
+                opacity: 1;
+            }
         }
     }
 }

@@ -16152,25 +16152,19 @@ section#meetchefs {
   margin-top: 6%;
   background-position: fixed;
   overflow-y: scroll;
-  /*
-    .chefs{
-        transform:rotateX(90deg);
-        transition:1s;
-    }
-    :hover{
-        .chefs{
-            transform:rotateX(120deg);
-        }
-    } 
-    */
 }
 
-section#meetchefs :hover {
-  cursor: pointer;
+section#meetchefs .chefs {
+  opacity: 0;
+  transition: 1s;
 }
 
-section#meetchefs :hover .chefs:nth-child(2) {
-  transform: scaleY(1);
+section#meetchefs :hover.chefs {
+  opacity: 1;
+}
+
+section#meetchefs :hover.chefs img {
+  opacity: 1;
 }
 
 section#meetchefs::-webkit-scrollbar {
