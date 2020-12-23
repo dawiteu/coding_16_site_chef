@@ -15885,11 +15885,7 @@ header .navbar li.nav-item .nav-link.active {
   background-color: red;
 }
 
-header .navbar li.nav-item:hover {
-  background-color: red;
-}
-
-header .navbar li.active {
+header .navbar li.nav-item .nav-link:hover {
   background-color: red;
 }
 
@@ -16155,15 +16151,11 @@ section#meetchefs {
 }
 
 section#meetchefs .chefs {
-  opacity: 0;
+  opacity: 0.5;
   transition: 1s;
 }
 
 section#meetchefs :hover.chefs {
-  opacity: 1;
-}
-
-section#meetchefs :hover.chefs img {
   opacity: 1;
 }
 

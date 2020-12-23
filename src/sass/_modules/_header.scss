@@ -71,19 +71,14 @@ header{
             text-align:center;
             .nav-link{
                 text-transform: uppercase;
-                // color:blue;
                 &.active{
-                    // color:yellow;
                     background-color:red;
                 }
-            }
 
-            &:hover{
-                background-color: red;
+                &:hover{
+                    background-color: red;
+                }
             }
-        }
-        li.active{
-            background-color: red;
         }
     } // fin . navbar ;   
 

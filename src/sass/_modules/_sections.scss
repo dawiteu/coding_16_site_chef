@@ -195,17 +195,14 @@ section#meetchefs{
 
     
     .chefs{
-        opacity:0; 
+        opacity:0.5; 
         transition:1s; 
     }
 
     :hover{
         &.chefs{
             opacity:1;
-            img{
-                opacity: 1;
-            }
-        }
+        } 
     }
 }
 
